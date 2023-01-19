@@ -1,8 +1,7 @@
-import styled from "@emotion/styled";
-import { applyMediaQuery,Colors, Fonts } from "styles";
+import styled from '@emotion/styled';
+import { applyMediaQuery, Colors, Fonts } from 'styles';
 
-
-const StyledRoot = styled.ul<{isToggleOpen:boolean}>`
+const StyledRoot = styled.ul<{ isToggleOpen: boolean }>`
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -17,14 +16,13 @@ const StyledRoot = styled.ul<{isToggleOpen:boolean}>`
   .nav-menu-list {
     text-decoration: none;
     display: block;
-
   }
-  ${ applyMediaQuery("mobile")}{
-    display: ${(props) => (props.isToggleOpen ? "block" : "none")};
+  ${applyMediaQuery('mobile')} {
+    display: ${(props) => (props.isToggleOpen ? 'block' : 'none')};
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 `;
 
-export {StyledRoot}
+export { StyledRoot };

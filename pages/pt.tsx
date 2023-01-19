@@ -1,5 +1,5 @@
-function Pt (){
-  return (<div>Pt</div>)
+function Pt() {
+  return <div>Pt</div>;
 }
 
 export default Pt;

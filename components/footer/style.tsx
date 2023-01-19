@@ -1,18 +1,16 @@
-import { applyMediaQuery,Colors, Fonts } from "styles";
-import styled from "@emotion/styled";
+import { applyMediaQuery, Colors, Fonts } from 'styles';
+import styled from '@emotion/styled';
 
 const StyledFooter = styled.footer`
-
-  ${applyMediaQuery("mobile")} {
+  ${applyMediaQuery('mobile')} {
     color: ${Colors.blue100};
   }
-`
+`;
 
 const StyledButton = styled.button`
-  
-  ${applyMediaQuery("mobile")} {
+  ${applyMediaQuery('mobile')} {
     color: ${Colors.blue100};
   }
-`
+`;
 
-export {StyledFooter, StyledButton}
+export { StyledFooter, StyledButton };

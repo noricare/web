@@ -15,12 +15,12 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
-    "paths":{
-      "components/*":["components/*"],
-      "constant/*":["constant/*"],
+    "paths": {
+      "components/*": ["components/*"],
+      "constant/*": ["constant/*"],
       /*"config/*":["config/*"],*/
-      "pages/*":["pages/*"],
-      "styles/*":["styles/*"]
+      "pages/*": ["pages/*"],
+      "styles/*": ["styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

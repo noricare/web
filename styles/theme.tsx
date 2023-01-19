@@ -8,6 +8,6 @@ export const theme = createTheme({
   },
 
   typography: {
-    fontFamily:"Pretendard",
-  }
+    fontFamily: 'Pretendard',
+  },
 });

@@ -8,9 +8,7 @@ export default {
   component: SampleButton,
 } as ComponentMeta<typeof SampleButton>;
 
-const Template: ComponentStory<typeof SampleButton> = (args) => (
-  <SampleButton {...args} />
-);
+const Template: ComponentStory<typeof SampleButton> = (args) => <SampleButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {

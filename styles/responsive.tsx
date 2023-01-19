@@ -1,12 +1,10 @@
-import { useMediaQuery } from "react-responsive";
-import { deviceQuery } from "../constant/deviceInfo";
+import { useMediaQuery } from 'react-responsive';
+import { deviceQuery } from '../constant/deviceInfo';
 
 export function useMedia() {
   const isMobile = useMediaQuery({
     query: deviceQuery.mobile,
   });
-
-
 
   const isDesktop = useMediaQuery({
     query: deviceQuery.desktop,
@@ -15,8 +13,8 @@ export function useMedia() {
   return { isMobile, isDesktop };
 }
 
-function Responsive(props:any) {
-  const { children, mobile,  desktop } = props;
+function Responsive(props: any) {
+  const { children, mobile, desktop } = props;
   const { isMobile, isDesktop } = useMedia();
 
   let shouldRender = false;

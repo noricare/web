@@ -8,20 +8,9 @@ interface Props {
   readonly onClick?: () => void;
 }
 
-export const SampleButton = ({
-  color = 'primary',
-  size = 'medium',
-  backgroundColor,
-  label,
-  onClick,
-}: Props) => {
+export const SampleButton = ({ color = 'primary', size = 'medium', backgroundColor, label, onClick }: Props) => {
   return (
-    <Button
-      variant="contained"
-      color={color}
-      size={size}
-      style={{ backgroundColor }}
-      onClick={onClick}>
+    <Button variant="contained" color={color} size={size} style={{ backgroundColor }} onClick={onClick}>
       {label}
     </Button>
   );
