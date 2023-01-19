@@ -9,16 +9,16 @@ const fonts = {
   },
 
   size: {
-    xxxLarge: '52px',
+    xxxLarge: '48px',
     xxLarge: '40px',
-    xLarge: '36px',
-    large: '32px',
-    regular: '28px',
-    xMedium: '24px',
-    medium: '20px',
-    small: '16px',
-    xSmall: '14px',
-    xxSmall: '12px',
+    xLarge: '32px',
+    large: '28px',
+    regular: '24px',
+    xMedium: '20px',
+    medium: '16px',
+    small: '14px',
+    xSmall: '12px',
+    xxSmall: '10px',
   },
 
   lineHeight: {

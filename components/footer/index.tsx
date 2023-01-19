@@ -1,11 +1,15 @@
-import { StyledFooter, StyledButton } from './style';
+import { Slogan, Description, Channel } from './item';
+import { StyledFooter, StyledWrapper } from './style';
 
 function MainFooter() {
   return (
-    <div>
-      <StyledFooter>footer</StyledFooter>
-      <StyledButton>button</StyledButton>
-    </div>
+    <StyledFooter>
+      <StyledWrapper>
+      <Channel />
+        <Slogan />
+      </StyledWrapper>
+      <Description />
+    </StyledFooter>
   );
 }
 

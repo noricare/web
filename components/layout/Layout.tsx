@@ -1,13 +1,16 @@
 import MainNavigation from '../navigation';
 import MainFooter from '../footer';
+import { StyledMain, StyledWrapper } from './style';
 
 function Layout(props: any) {
   return (
-    <div>
-      <MainNavigation />
-      <main>{props.children}</main>
+    <>
+      <StyledWrapper>
+        <MainNavigation />
+        <StyledMain>{props.children}</StyledMain>
+      </StyledWrapper>
       <MainFooter />
-    </div>
+    </>
   );
 }
 
