@@ -1,10 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { DonutChart } from 'components/main';
-import { DONUT_ITEM } from 'constant/donutItem';
+import { DonutChart, ImageSlider } from 'components/main';
+import { DONUT_ITEM, MainImage_ITEM } from 'constant';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
+import { Carousel } from 'react-responsive-carousel';
 
 const Home: NextPage = () => {
   return (
@@ -17,16 +18,25 @@ const Home: NextPage = () => {
 
       <main>
         <DonutWrapper>
-        {DONUT_ITEM.map((item,idx)=>(
-            <DonutChart percent={item.percent} label = {item.title} description = {item.description} />
-        ))}
+          {DONUT_ITEM.map((item, idx) => (
+            <DonutChart percent={item.percent} key={item.title} label={item.title} description={item.description} />
+          ))}
         </DonutWrapper>
-
-
-        <p>
-          Get started by editing <code>pages/index.tsx</code>
-        </p>
-
+        <ImageSlideWrapper>
+          <Carousel showThumbs={false} showArrows={false} autoPlay={true} showStatus={false}>
+            {MainImage_ITEM.map((item, idx) => (
+              <ImageSlider
+                key={item.label}
+                src={item.srl}
+                label={item.label}
+                width={item.width}
+                height={item.height}
+                subTitle00={item.subTitle00}
+                subTitle01={item.subTitle01}
+              />
+            ))}
+          </Carousel>
+        </ImageSlideWrapper>
         <div>
           <a href="https://nextjs.org/docs">
             <h2>Documentation &rarr;</h2>
@@ -146,19 +156,36 @@ const Home: NextPage = () => {
 
 export default Home;
 
-
-const DonutWrapper = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
+const DonutWrapper = styled.section`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   /*레이아웃 관련*/
   padding: 2.7rem 10rem;
   width: 100%;
-background-color: ${Colors.blue100};
-${applyMediaQuery('mobile')} {
+  background-color: ${Colors.blue100};
+  ${applyMediaQuery('mobile')} {
     padding: 1.5rem 3rem;
     flex-direction: column;
-}
+  }
+`;
 
+const ImageSlideWrapper = styled.section`
+  /*레이아웃 관련*/
+  padding: 2.7rem 10rem;
+  width: 100%;
+  background-color: ${Colors.blue100};
+  ${applyMediaQuery('mobile')} {
+    padding: 1.5rem 3rem;
+    flex-direction: column;
+  }
+
+  .carousel.carousel-slider .control-arrow {
+    color: ${Colors.gray400};
+  }
+
+  .slide selected previous {
+    width: 100%;
+  }
 `;

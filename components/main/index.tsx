@@ -1,1 +1,3 @@
-export { DonutChart } from './donutChart';
+export { DonutChart } from './item/DonutChart';
+
+export { ImageSlider } from './item/ImageSlider';

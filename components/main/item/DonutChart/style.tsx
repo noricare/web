@@ -1,12 +1,11 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
 
-const StyledRoot = styled.div <{ percent: number }>`
-
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0.8rem;
+const StyledRoot = styled.div<{ percent: number }>`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem;
   .svg-item {
     width: 29.5rem;
     animation: donutfade 1s;
@@ -22,22 +21,19 @@ padding: 0.8rem;
     }
   }
 
-
   .donut-ring {
-    stroke:${Colors.gray100};
+    stroke: ${Colors.gray100};
   }
 
   .donut-segment {
     transform-origin: center;
-    stroke:${Colors.blue600};
+    stroke: ${Colors.blue600};
     animation: donut1 4s;
   }
 
-
-
   .donut-percent {
     animation: donutfadelong 1s;
-    font-size:0.5rem;
+    font-size: 0.5rem;
     font-weight: bold;
   }
 
@@ -55,18 +51,15 @@ padding: 0.8rem;
       stroke-dasharray: 0, 100;
     }
     100% {
-      stroke-dasharray: ${(props=>(props.percent))}, ${(props=>(100-props.percent))};
+      stroke-dasharray: ${(props) => props.percent}, ${(props) => 100 - props.percent};
     }
   }
 
-
   .donut-text {
-    fill:${Colors.blue600};
+    fill: ${Colors.blue600};
   }
   .donut-percent {
- 
     /*transform: translateY(0.5em);*/
-
   }
 
   .donut-data {
@@ -80,9 +73,7 @@ padding: 0.8rem;
   }
 `;
 
-
-const DonutText= styled.p`
+const DonutText = styled.p`
   ${Fonts.display3}
-
 `;
-export { StyledRoot,DonutText };
+export { StyledRoot, DonutText };

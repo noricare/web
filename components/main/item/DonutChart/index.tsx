@@ -1,13 +1,12 @@
 import { StyledRoot, DonutText } from './style';
 
-
-interface IDonutChart{
-  percent:number;
-  label:string;
-  description:string;
+interface IDonutChart {
+  percent: number;
+  label: string;
+  description: string;
 }
 
-export const DonutChart = ({percent, label,description }:IDonutChart) => {
+export const DonutChart = ({ percent, label, description }: IDonutChart) => {
   return (
     <StyledRoot percent={percent}>
       <div className="svg-item">
