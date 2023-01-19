@@ -10,7 +10,7 @@ const StyledRoot = styled.header`
     background-color: ${Colors.blue100};
     /*폰트 관련*/
     color:${Colors.blue300};
-    ${Fonts.display2};
+    ${Fonts.display1};
     /*레이아웃 관련*/
     padding:2.7rem 10rem;
     width: 100%;
@@ -30,7 +30,6 @@ const StyledRoot = styled.header`
    
 
   ${ applyMediaQuery("mobile")} {
-    ${Fonts.display1};
       padding: 1.5rem 3rem;
       flex-direction: column;
       justify-content: space-between;
