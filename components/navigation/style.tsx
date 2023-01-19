@@ -30,6 +30,7 @@ const StyledRoot = styled.header`
    
 
   ${ applyMediaQuery("mobile")} {
+    ${Fonts.display1};
       padding: 1.5rem 3rem;
       flex-direction: column;
       justify-content: space-between;

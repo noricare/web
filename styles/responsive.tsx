@@ -6,25 +6,22 @@ export function useMedia() {
     query: deviceQuery.mobile,
   });
 
-  const isTablet = useMediaQuery({
-    query: deviceQuery.tablet,
-  });
+
 
   const isDesktop = useMediaQuery({
     query: deviceQuery.desktop,
   });
 
-  return { isMobile, isTablet, isDesktop };
+  return { isMobile, isDesktop };
 }
 
 function Responsive(props:any) {
-  const { children, mobile, tablet, desktop } = props;
-  const { isMobile, isTablet, isDesktop } = useMedia();
+  const { children, mobile,  desktop } = props;
+  const { isMobile, isDesktop } = useMedia();
 
   let shouldRender = false;
 
   if (mobile) shouldRender = shouldRender || isMobile;
-  if (tablet) shouldRender = shouldRender || isTablet;
   if (desktop) shouldRender = shouldRender || isDesktop;
 
   return <>{shouldRender && children}</>;
