@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
-export const Logo = () => {
-  return <Image src="/vercel.svg" alt="Vercel Logo" className="logo" width={72} height={16} />;
+interface ISize{
+  width:number;
+  height:number;
+}
+
+
+export const Logo = ({width, height}:ISize) => {
+  return <Image src="/logo.png" alt="노리케어 Logo" width={width} height={height} />;
 };
