@@ -5,7 +5,7 @@ function MainFooter() {
   return (
     <StyledFooter>
       <StyledWrapper>
-      <Channel />
+        <Channel />
         <Slogan />
       </StyledWrapper>
       <Description />

@@ -24,8 +24,7 @@ const StyledWrapper = styled.div`
   flex-direction: row;
   width: 60rem;
   justify-content: space-between;
-    ${applyMediaQuery('mobile')} {
-
+  ${applyMediaQuery('mobile')} {
     flex-direction: column;
   }
 `;
