@@ -5,14 +5,15 @@ import { StyledRoot } from "./style";
 
 interface INavMenu {
   isToggleOpen : boolean;
+  onClick: () => void;
 }
 
-export const NavMenu = ({ isToggleOpen }:INavMenu) => {
+export const NavMenu = ({ isToggleOpen, onClick }:INavMenu) => {
 
 
 
   return (
-    <StyledRoot isToggleOpen={isToggleOpen}>
+    <StyledRoot isToggleOpen={isToggleOpen} onClick={onClick}>
 
       {NAVIGATION_ITEM.map((menu, idx)=>(
         <li key={menu.text}>

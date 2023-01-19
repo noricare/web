@@ -14,7 +14,7 @@ const MainNavigation =()=>{
     <StyledRoot>
       <LogoItem/>
       <ToggleBtn  onClick={handleToggleOpen} isToggleOpen={isToggleOpen}/>
-      <NavMenu isToggleOpen={isToggleOpen} />
+      <NavMenu isToggleOpen={isToggleOpen}  onClick={handleToggleOpen}/>
     </StyledRoot>
   )
 };
