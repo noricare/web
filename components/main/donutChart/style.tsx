@@ -1,9 +1,14 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
 
-const StyledRoot = styled.div`
+const StyledRoot = styled.div <{ percent: number }>`
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.8rem;
   .svg-item {
-    width: 25%;
+    width: 29.5rem;
     animation: donutfade 1s;
   }
 
@@ -25,7 +30,7 @@ const StyledRoot = styled.div`
   .donut-segment {
     transform-origin: center;
     stroke:${Colors.blue600};
-    animation: donut1 3s;
+    animation: donut1 4s;
   }
 
 
@@ -50,7 +55,7 @@ const StyledRoot = styled.div`
       stroke-dasharray: 0, 100;
     }
     100% {
-      stroke-dasharray: 69, 31;
+      stroke-dasharray: ${(props=>(props.percent))}, ${(props=>(100-props.percent))};
     }
   }
 
@@ -60,7 +65,7 @@ const StyledRoot = styled.div`
   }
   .donut-percent {
  
-    transform: translateY(0.5em);
+    /*transform: translateY(0.5em);*/
 
   }
 
@@ -70,10 +75,14 @@ const StyledRoot = styled.div`
     transform: translateY(0.5em);
     text-align: center;
     text-anchor: middle;
-    /*color: ${Colors.gray300};*/
     fill: ${Colors.gray400};
     animation: donutfadelong 1s;
   }
 `;
 
-export { StyledRoot };
+
+const DonutText= styled.p`
+  ${Fonts.display3}
+
+`;
+export { StyledRoot,DonutText };
