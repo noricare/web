@@ -40,9 +40,8 @@ export const ProgramWrapper = () => {
         </MiddleWrapper>
         <BottomWrapper>
           <ImageWrapper>
-          <Image src="/diagram/Under.png" alt="under asset" width="350" height="82" />
+            <Image src="/diagram/Under.png" alt="under asset" width="350" height="82" />
           </ImageWrapper>
-        
         </BottomWrapper>
       </ProgramBoxWrapper>
     </StyledRoot>
@@ -66,11 +65,10 @@ const ProgramBoxWrapper = styled.div`
   flex-direction: column;
   padding: 7.2rem 0;
   justify-content: flex-end;
-    ${applyMediaQuery('mobile')} {
-width: fit-content;
-padding: 2.5rem 0;
+  ${applyMediaQuery('mobile')} {
+    width: fit-content;
+    padding: 2.5rem 0;
   }
-
 `;
 
 const UpperWrapper = styled.div`
@@ -79,9 +77,8 @@ const UpperWrapper = styled.div`
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-    ${applyMediaQuery('mobile')} {
-
-      padding: 0.8rem 0;
+  ${applyMediaQuery('mobile')} {
+    padding: 0.8rem 0;
   }
 `;
 
@@ -92,10 +89,9 @@ const MiddleWrapper = styled.div`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
-    ${applyMediaQuery('mobile')} {
-flex-direction: column;
- padding:  0;
-    
+  ${applyMediaQuery('mobile')} {
+    flex-direction: column;
+    padding: 0;
   }
 `;
 
@@ -107,9 +103,8 @@ const BottomWrapper = styled.div`
   justify-content: space-around;
 `;
 
-
 const ImageWrapper = styled.div`
   ${applyMediaQuery('mobile')} {
-display: none;
+    display: none;
   }
 `;

@@ -13,7 +13,7 @@ export const GroupProgram = {
 };
 
 export const PersonalAppProgram = {
-  label:'방문 PT',
+  label: '방문 PT',
   subTitle00: '데일리 처방 맞춤형 운동',
   subTitle01: '개인 질환, 관절 제한, 근 피로도 반영',
   subTitle02: '회원별 개인 관리 가능',

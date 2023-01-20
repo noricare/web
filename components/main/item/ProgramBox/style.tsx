@@ -6,7 +6,6 @@ const StyledRoot = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 `;
 
 const ProgramLabel = styled.div`
@@ -20,7 +19,7 @@ const ProgramLabel = styled.div`
     padding: 0.8rem 1.5rem;
     align-items: center;
     ${Fonts.display1}
-     margin:0.5rem 0;
+    margin:0.5rem 0;
   }
 `;
 
@@ -35,11 +34,9 @@ const ProgramDescripition = styled.div`
     padding: 1rem 0;
   }
   ${applyMediaQuery('mobile')} {
-p{
-
-  padding: 0.5rem 0;
-}
-
+    p {
+      padding: 0.5rem 0;
+    }
   }
 `;
 

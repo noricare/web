@@ -41,7 +41,7 @@ export const ProgramTitle = () => {
       </StyledTitle>
       <StyledTitle>
         <span>원스톱 패키지 </span>
-         운동 프로그램 
+        운동 프로그램
       </StyledTitle>
     </>
   );
