@@ -2,23 +2,12 @@ import { applyMediaQuery, Colors, Fonts } from 'styles';
 import styled from '@emotion/styled';
 
 const StyledRoot = styled.div`
-  width: 20rem;
-  height: 13rem;
-  ${applyMediaQuery('mobile')} {
-  }
-`;
-
-const LogoWrapper = styled.div`
-  width: 100%;
-  margin-bottom: 1.5rem;
-`;
-
-const LinkWrapper = styled.div`
-  width: 100%;
+  margin-top: 1.5rem;
+  width: 10rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 `;
 
-export { StyledRoot, LogoWrapper, LinkWrapper };
+export { StyledRoot };

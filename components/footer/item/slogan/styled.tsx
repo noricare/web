@@ -3,14 +3,22 @@ import styled from '@emotion/styled';
 
 const StyledRoot = styled.div`
   color: ${Colors.black};
-  ${Fonts.display3}
-  span {
-    color: ${Colors.blue600};
-  }
+  ${Fonts.display2}
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:fit-content;
   ${applyMediaQuery('mobile')} {
     ${Fonts.display2}
   }
 `;
 
-export { StyledRoot };
+const TextWrapper = styled.div`
+  ${Fonts.display1}
+  span {
+    color: ${Colors.blue600};
+  }
+`;
+
+export { StyledRoot, TextWrapper };

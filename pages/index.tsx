@@ -175,17 +175,23 @@ const ImageSlideWrapper = styled.section`
   /*레이아웃 관련*/
   padding: 2.7rem 10rem;
   width: 100%;
+
   background-color: ${Colors.blue100};
   ${applyMediaQuery('mobile')} {
     padding: 1.5rem 3rem;
     flex-direction: column;
+    .slide{
+    div{
+height: 100%;
+
+      span{
+         height:  100% !important;
+    }
+  }
+}
+   
   }
 
-  .carousel.carousel-slider .control-arrow {
-    color: ${Colors.gray400};
-  }
 
-  .slide selected previous {
-    width: 100%;
-  }
+
 `;

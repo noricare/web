@@ -9,6 +9,9 @@ const StyledRoot = styled.div<{ percent: number }>`
   .svg-item {
     width: 29.5rem;
     animation: donutfade 1s;
+    ${applyMediaQuery('mobile')} {
+    width: 20rem;
+  }
   }
 
   @keyframes donutfade {
@@ -71,9 +74,14 @@ const StyledRoot = styled.div<{ percent: number }>`
     fill: ${Colors.gray400};
     animation: donutfadelong 1s;
   }
+
+
 `;
 
 const DonutText = styled.p`
   ${Fonts.display3}
+  ${applyMediaQuery('mobile')} {
+    ${Fonts.display2}
+  }
 `;
 export { StyledRoot, DonutText };
