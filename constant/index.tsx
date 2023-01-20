@@ -5,3 +5,4 @@ export { FooterInfo } from './footerInfo';
 export { DONUT_ITEM } from './donutItem';
 export { MainImage_ITEM } from './main-image-slider';
 export { VALUE_ITEM } from './valueItem';
+export { LiveProgram, GroupProgram, PersonalAppProgram } from './ProgramItem';

@@ -1,4 +1,5 @@
-import { StyledRoot, StyledTitle , ValueLabel, ValueDescription} from './style';
+import { StyledRoot, ValueLabel, ValueDescription } from './style';
+import { StyledTitle } from 'components/common/style';
 import Image from 'next/image';
 
 interface IValueBox {
@@ -16,8 +17,8 @@ export const ValueBox = ({ src, label, subTitle00, subTitle01, height, width }: 
       <Image src={src} alt="노리케어 Logo" width={width} height={height} />
       <ValueLabel>{label}</ValueLabel>
       <ValueDescription>
-      <p>{subTitle00}</p>
-      <p>{subTitle01}</p>
+        <p>{subTitle00}</p>
+        <p>{subTitle01}</p>
       </ValueDescription>
     </StyledRoot>
   );
