@@ -9,7 +9,7 @@ interface ISize {
 export const Logo = ({ width, height }: ISize) => {
   return (
     <StyledLogo>
-      <Image src="/logo.png" alt="노리케어 Logo" width={width} height={height} priority={true}/>
+      <Image src="/logo.png" alt="노리케어 Logo" width={width} height={height} priority={true} />
     </StyledLogo>
   );
 };

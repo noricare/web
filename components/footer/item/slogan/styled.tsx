@@ -8,7 +8,7 @@ const StyledRoot = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width:fit-content;
+  width: fit-content;
   ${applyMediaQuery('mobile')} {
     ${Fonts.display2}
   }

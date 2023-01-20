@@ -1,8 +1,8 @@
-export const borderRadius = {
+export const BorderRadius = {
   large: '40px',
   regular: '10px',
 };
 
-export const dropShadow = {
+export const DropShadow = {
   regular: 'drop shadow',
 };

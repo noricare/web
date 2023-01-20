@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { DonutChart, ImageSlider } from 'components/main';
+import { DonutChart, ImageSlider, ValueWrapper } from 'components/main';
 import { DONUT_ITEM, MainImage_ITEM } from 'constant';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <HomeMain>
         <DonutWrapper>
           {DONUT_ITEM.map((item, idx) => (
             <DonutChart percent={item.percent} key={item.title} label={item.title} description={item.description} />
@@ -37,6 +37,8 @@ const Home: NextPage = () => {
             ))}
           </Carousel>
         </ImageSlideWrapper>
+        <ValueWrapper />
+
         <div>
           <a href="https://nextjs.org/docs">
             <h2>Documentation &rarr;</h2>
@@ -136,7 +138,7 @@ const Home: NextPage = () => {
             <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
           </a>
         </div>
-      </main>
+      </HomeMain>
 
       <footer>
         <a
@@ -156,42 +158,47 @@ const Home: NextPage = () => {
 
 export default Home;
 
+const HomeMain =styled.main`
+
+section{
+    /*레이아웃 관련*/
+    padding: 10.5rem 10rem;
+
+  ${applyMediaQuery('mobile')} {
+    padding: 2.5rem 3rem;
+
+  }
+}
+`;
+
+
 const DonutWrapper = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /*레이아웃 관련*/
-  padding: 2.7rem 10rem;
-  width: 100%;
-  background-color: ${Colors.blue100};
+
+  background-color: ${Colors.white};
   ${applyMediaQuery('mobile')} {
-    padding: 1.5rem 3rem;
+
     flex-direction: column;
   }
 `;
 
 const ImageSlideWrapper = styled.section`
-  /*레이아웃 관련*/
-  padding: 2.7rem 10rem;
-  width: 100%;
 
   background-color: ${Colors.blue100};
   ${applyMediaQuery('mobile')} {
-    padding: 1.5rem 3rem;
-    flex-direction: column;
-    .slide{
-    div{
-height: 100%;
 
-      span{
-         height:  100% !important;
+    flex-direction: column;
+    .slide {
+      div {
+        height: 100%;
+
+        span {
+          height: 100% !important;
+        }
+      }
     }
   }
-}
-   
-  }
-
-
-
 `;

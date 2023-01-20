@@ -10,8 +10,8 @@ const StyledRoot = styled.div<{ percent: number }>`
     width: 29.5rem;
     animation: donutfade 1s;
     ${applyMediaQuery('mobile')} {
-    width: 20rem;
-  }
+      width: 20rem;
+    }
   }
 
   @keyframes donutfade {
@@ -74,8 +74,6 @@ const StyledRoot = styled.div<{ percent: number }>`
     fill: ${Colors.gray400};
     animation: donutfadelong 1s;
   }
-
-
 `;
 
 const DonutText = styled.p`

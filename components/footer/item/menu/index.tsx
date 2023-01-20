@@ -22,9 +22,11 @@ export const SubMenu = () => {
   );
 };
 
-
-export const Menu = ()=>{
+export const Menu = () => {
   return (
-    <><MainMenu /><SubMenu /></>
-  )
-}
+    <>
+      <MainMenu />
+      <SubMenu />
+    </>
+  );
+};

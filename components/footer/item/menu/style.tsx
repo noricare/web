@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 const StyledRoot = styled.div`
   color: ${Colors.gray300};
   ${Fonts.subhead3}
-width: fit-content;
+  width: fit-content;
   height: 100%;
   display: flex;
   flex-direction: column;
