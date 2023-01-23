@@ -17,12 +17,7 @@ const Home: NextPage = () => {
       </Head>
 
       <HomeMain>
-        <DonutWrapper>
-          {DONUT_ITEM.map((item, idx) => (
-            <DonutChart percent={item.percent} key={item.title} label={item.title} description={item.description} />
-          ))}
-        </DonutWrapper>
-        <ImageSlideWrapper>
+      <ImageSlideWrapper>
           <Carousel showThumbs={false} showArrows={false} autoPlay={true} showStatus={false}>
             {MainImage_ITEM.map((item, idx) => (
               <ImageSlider
@@ -37,6 +32,12 @@ const Home: NextPage = () => {
             ))}
           </Carousel>
         </ImageSlideWrapper>
+        <DonutWrapper>
+          {DONUT_ITEM.map((item, idx) => (
+            <DonutChart percent={item.percent} key={item.title} label={item.title} description={item.description} />
+          ))}
+        </DonutWrapper>
+
         <ValueWrapper />
         <ProgramWrapper />
         <ReviewWrapper />
@@ -85,6 +86,7 @@ const DonutWrapper = styled.section`
 `;
 
 const ImageSlideWrapper = styled.section`
+padding: 0 !important;
   background-color: ${Colors.blue100};
   ${applyMediaQuery('mobile')} {
     flex-direction: column;

@@ -6,6 +6,10 @@ const StyledProgramContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+    ${applyMediaQuery('mobile')} {
+   padding: 2rem 0;
+  }
 `;
 
 const ProgramLabel = styled.div`
@@ -20,7 +24,7 @@ const ProgramLabel = styled.div`
     padding: 0.8rem 1.5rem;
     align-items: center;
     ${Fonts.display1}
-    margin:0.5rem 0;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -47,6 +51,10 @@ width: 100%;
 display: flex;
 flex-direction: column;
 align-items: flex-end;
+padding-bottom: 7.2rem;
+  ${applyMediaQuery('mobile')} {
+align-items: center;
+  }
 `;
 
 

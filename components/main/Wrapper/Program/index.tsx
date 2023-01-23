@@ -67,7 +67,7 @@ const ProgramBoxWrapper = styled.div`
   justify-content: flex-end;
   ${applyMediaQuery('mobile')} {
     width: fit-content;
-    padding: 2.5rem 0;
+    padding: 0;
   }
 `;
 
