@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {StyledRoot,QuestionWrapper,  AnswerWrapper} from "./style";
+import { StyledRoot, QuestionWrapper, AnswerWrapper } from './style';
 
 import Image from 'next/image';
 interface IFAQ {

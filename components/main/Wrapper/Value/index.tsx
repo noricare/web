@@ -25,7 +25,7 @@ export const ValueWrapper = () => {
 };
 
 const StyledRoot = styled.section`
- background-color: ${Colors.blue200}20;
+  background-color: ${Colors.blue200}20;
 
   background-blend-mode: multiply;
   min-height: 75rem;

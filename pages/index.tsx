@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { DonutChart, ImageSlider, ValueWrapper, ProgramWrapper, FAQWrapper } from 'components/main';
+import { DonutChart, ImageSlider, ValueWrapper, ProgramWrapper, FAQWrapper, ReviewWrapper } from 'components/main';
 import { DONUT_ITEM, MainImage_ITEM } from 'constant';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
@@ -39,6 +39,7 @@ const Home: NextPage = () => {
         </ImageSlideWrapper>
         <ValueWrapper />
         <ProgramWrapper />
+        <ReviewWrapper />
         <FAQWrapper />
       </HomeMain>
 

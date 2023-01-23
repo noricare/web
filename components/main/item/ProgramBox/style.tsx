@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { applyMediaQuery, Colors, Fonts, BorderRadius,DropShadow } from 'styles';
+import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 
 const StyledRoot = styled.div`
   padding: 0 2rem;
@@ -10,7 +10,7 @@ const StyledRoot = styled.div`
 
 const ProgramLabel = styled.div`
   background-color: ${Colors.blue100};
-    box-shadow: ${DropShadow.regular};
+  box-shadow: ${DropShadow.regular};
   margin-bottom: 1.5rem;
   ${Fonts.display2}
   color:${Colors.blue500};
