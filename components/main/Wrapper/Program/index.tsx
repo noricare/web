@@ -85,9 +85,8 @@ const UpperWrapper = styled.div`
 const MiddleWrapper = styled.div`
   padding: 1.5rem 0;
   display: flex;
-
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
   ${applyMediaQuery('mobile')} {
     flex-direction: column;

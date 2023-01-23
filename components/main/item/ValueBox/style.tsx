@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
-import { applyMediaQuery, Colors, Fonts, BorderRadius } from 'styles';
+import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 
 const StyledRoot = styled.div`
   background-color: ${Colors.blue100};
   padding: 1.5rem 2rem;
+  box-shadow: ${DropShadow.regular};
   border-radius: ${BorderRadius.regular};
   width: fit-content;
   img {

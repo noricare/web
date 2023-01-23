@@ -25,7 +25,9 @@ export const ValueWrapper = () => {
 };
 
 const StyledRoot = styled.section`
-  background-color: ${Colors.white};
+ background-color: ${Colors.blue200}20;
+
+  background-blend-mode: multiply;
   min-height: 75rem;
   display: flex;
   flex-direction: column;

@@ -4,5 +4,5 @@ export const BorderRadius = {
 };
 
 export const DropShadow = {
-  regular: 'drop shadow',
+  regular: "0px 4px 5px rgba(0, 0, 0, 0.1)"
 };
