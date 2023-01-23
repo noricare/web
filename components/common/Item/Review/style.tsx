@@ -1,12 +1,19 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts, BorderRadius } from 'styles';
 
-const StyledRoot = styled.div`
+
+
+const StyledRoot = styled.div<{position:number}>`
 display: flex;
 width: 100%;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
+flex-direction: ${(props)=>(props.position%2==0?"row":"row-reverse")};
+align-items: space-between;
+padding-bottom: 6.5rem;
+
+${applyMediaQuery("mobile")}{
+flex-direction: column;
+align-items: center;
+}
 `;
 
 
@@ -30,9 +37,12 @@ p {
 const StyledSpeechBubble =styled.div`
   border-radius:${BorderRadius.large};
   border: solid ${Colors.blue300} 3px;
-  width: 60rem;
+width: 65rem;
   padding: 1.5rem 2.5rem;
-
+  margin: 0 3rem;
+${applyMediaQuery("mobile")}{
+width: fit-content;
+}
   p{
     ${Fonts.display2}
     padding-bottom: 1rem;

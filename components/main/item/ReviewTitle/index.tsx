@@ -21,8 +21,8 @@ const StyledRoot = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-
+  align-items: flex-start;
+  padding-bottom: 7.2rem;
   ${applyMediaQuery('mobile')} {
     align-items: center;
   }

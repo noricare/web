@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 
-const StyledRoot = styled.div`
+const StyledProgramContainer = styled.div`
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,16 @@ const ProgramDescripition = styled.div`
   }
 `;
 
+
+const StyledProgramTitleContainer=styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+`;
+
+
 const PrgramText = styled.span`
   padding-left: 0.5rem;
 `;
-export { StyledRoot, ProgramLabel, ProgramDescripition, PrgramText };
+export { StyledProgramTitleContainer,StyledProgramContainer, ProgramLabel, ProgramDescripition, PrgramText };

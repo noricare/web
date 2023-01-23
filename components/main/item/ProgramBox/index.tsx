@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { StyledRoot, ProgramLabel, ProgramDescripition, PrgramText } from './style';
+import { StyledProgramTitleContainer,StyledProgramContainer, ProgramLabel, ProgramDescripition, PrgramText } from './style';
 import { StyledTitle } from 'components/common';
 
 interface IProgramBox {
@@ -11,7 +11,7 @@ interface IProgramBox {
 
 export const ProgramBox = ({ label, subTitle00, subTitle01, subTitle02 }: IProgramBox) => {
   return (
-    <StyledRoot>
+    <StyledProgramContainer>
       <ProgramLabel>{label}</ProgramLabel>
       <ProgramDescripition>
         <p>
@@ -27,13 +27,13 @@ export const ProgramBox = ({ label, subTitle00, subTitle01, subTitle02 }: IProgr
           <PrgramText>{subTitle02} </PrgramText>
         </p>
       </ProgramDescripition>
-    </StyledRoot>
+    </StyledProgramContainer>
   );
 };
 
 export const ProgramTitle = () => {
   return (
-    <>
+    <StyledProgramTitleContainer>
       <StyledTitle>다채롭고 편리한 노리케어</StyledTitle>
       <StyledTitle>
         다양한 환경과 조건
@@ -43,6 +43,6 @@ export const ProgramTitle = () => {
         <span>원스톱 패키지 </span>
         운동 프로그램
       </StyledTitle>
-    </>
+    </StyledProgramTitleContainer>
   );
 };

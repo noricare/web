@@ -9,9 +9,12 @@ export const ReviewWrapper = () => {
   return (
     <StyledRoot>
       <ReviewTitle />
+      <ReviewContainer>
       {list.map((item, idx) => (
-        <Review />
+        <Review position={idx}/>
       ))}
+      </ReviewContainer>
+
     </StyledRoot>
   );
 };
@@ -21,8 +24,21 @@ const StyledRoot = styled.section`
   min-height: 75rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+
+
+
   ${applyMediaQuery('mobile')} {
     padding: 3rem 0;
+  }
+
+`;
+
+
+const ReviewContainer=styled.div`
+width: 100%;
+
+${applyMediaQuery('mobile')} {
+  width: fit-content;
   }
 `;
