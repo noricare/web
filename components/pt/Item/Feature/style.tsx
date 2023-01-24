@@ -28,6 +28,7 @@ color:${Colors.blue600};
 span{
   ${Fonts.display1}
   color:${Colors.black};
+  text-align: center;
 }
 
   ${applyMediaQuery('mobile')} {
