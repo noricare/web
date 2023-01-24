@@ -1,5 +1,13 @@
-export { DonutChart } from './item/DonutChart';
+export { DonutChart } from './Item/DonutChart';
 
-export { ImageSlider } from './item/ImageSlider';
+export { ImageSlider } from './Item/ImageSlider';
 
-export { ValueWrapper, ProgramWrapper, FAQWrapper, ReviewWrapper, DonutWrapper, ImageSliderWrapper } from './Wrapper';
+export {
+  ValueWrapper,
+  ProgramWrapper,
+  FAQWrapper,
+  ReviewWrapper,
+  DonutWrapper,
+  ImageSliderWrapper,
+  NewsWrapper,
+} from './Wrapper';

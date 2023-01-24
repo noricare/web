@@ -1,4 +1,4 @@
-import { ValueTitle, ValueBox } from '../../item';
+import { ValueTitle, ValueBox } from '../../Item';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
 import { VALUE_ITEM } from 'constant';

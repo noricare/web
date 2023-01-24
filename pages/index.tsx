@@ -8,12 +8,10 @@ import {
   ProgramWrapper,
   FAQWrapper,
   ReviewWrapper,
+  NewsWrapper,
 } from 'components/main';
-import { DONUT_ITEM, MainImage_ITEM } from 'constant';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
-import { Carousel } from 'react-responsive-carousel';
-import { NewsWrapper } from 'components/main/Wrapper';
 
 const Home: NextPage = () => {
   return (
@@ -39,7 +37,7 @@ const Home: NextPage = () => {
 
 export default Home;
 
-const HomeMain = styled.main`
+export const HomeMain = styled.main`
   section {
     /*레이아웃 관련*/
     padding: 10.5rem 10rem;

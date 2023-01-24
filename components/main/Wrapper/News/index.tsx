@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
-import { NewsBox, NewsTitle } from 'components/main/item';
+import { NewsBox, NewsTitle } from 'components/main/Item';
 import { News_ITEM } from 'constant/newsItem';
 
 export const NewsWrapper = () => {

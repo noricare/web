@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
-import { ReviewTitle } from 'components/main/item';
+import { ReviewTitle } from 'components/main/Item';
 import { Review } from 'components/common';
 
 const list = [1, 2, 3, 4, 5];

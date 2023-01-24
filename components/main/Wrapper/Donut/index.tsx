@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
 import { DONUT_ITEM } from 'constant';
-import { DonutChart } from 'components/main/item';
+import { DonutChart } from 'components/main/Item';
 
 export const DonutWrapper = () => {
   return (

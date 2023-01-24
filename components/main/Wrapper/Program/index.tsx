@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ProgramTitle, ProgramBox } from '../../item';
+import { ProgramTitle, ProgramBox } from '../../Item';
 import { LiveProgram, GroupProgram, PersonalAppProgram } from 'constant';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
