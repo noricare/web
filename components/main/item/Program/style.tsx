@@ -7,8 +7,8 @@ const StyledProgramContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-    ${applyMediaQuery('mobile')} {
-   padding: 2rem 0;
+  ${applyMediaQuery('mobile')} {
+    padding: 2rem 0;
   }
 `;
 
@@ -45,20 +45,18 @@ const ProgramDescripition = styled.div`
   }
 `;
 
-
-const StyledProgramTitleContainer=styled.div`
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-padding-bottom: 7.2rem;
+const StyledProgramTitleContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 7.2rem;
   ${applyMediaQuery('mobile')} {
-align-items: center;
+    align-items: center;
   }
 `;
-
 
 const PrgramText = styled.span`
   padding-left: 0.5rem;
 `;
-export { StyledProgramTitleContainer,StyledProgramContainer, ProgramLabel, ProgramDescripition, PrgramText };
+export { StyledProgramTitleContainer, StyledProgramContainer, ProgramLabel, ProgramDescripition, PrgramText };

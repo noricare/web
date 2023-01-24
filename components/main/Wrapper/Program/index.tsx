@@ -53,7 +53,7 @@ const StyledRoot = styled.section`
   min-height: 75rem;
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   ${applyMediaQuery('mobile')} {
     padding: 3rem 0;
     align-items: center;
@@ -85,8 +85,9 @@ const MiddleWrapper = styled.div`
   padding: 1.5rem 0;
   display: flex;
   flex-direction: row;
+  width: 70rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   ${applyMediaQuery('mobile')} {
     flex-direction: column;
     padding: 0;

@@ -1,56 +1,52 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts, BorderRadius } from 'styles';
 
+const StyledRoot = styled.div<{ position: number }>`
+  display: flex;
+  width: 100%;
+  flex-direction: ${(props) => (props.position % 2 == 0 ? 'row' : 'row-reverse')};
+  align-items: space-between;
+  padding-bottom: 6.5rem;
 
-
-const StyledRoot = styled.div<{position:number}>`
-display: flex;
-width: 100%;
-flex-direction: ${(props)=>(props.position%2==0?"row":"row-reverse")};
-align-items: space-between;
-padding-bottom: 6.5rem;
-
-${applyMediaQuery("mobile")}{
-flex-direction: column;
-align-items: center;
-}
+  ${applyMediaQuery('mobile')} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
-
 
 const StyledAvater = styled.div`
-display: flex;
+  display: flex;
 
-flex-direction: column;
+  flex-direction: column;
 
-align-items: center;
-img{
-  border-radius:50%;
-}
+  align-items: center;
+  img {
+    border-radius: 50%;
+  }
 
-p {
-  padding: 0.8rem;
-  ${Fonts.display1}
-  color:${Colors.gray300};
-}
-
+  p {
+    padding: 0.8rem;
+    ${Fonts.display1}
+    color:${Colors.gray300};
+  }
 `;
-const StyledSpeechBubble =styled.div`
-  border-radius:${BorderRadius.large};
+const StyledSpeechBubble = styled.div`
+  border-radius: ${BorderRadius.large};
   border: solid ${Colors.blue300} 3px;
-width: 65rem;
+  width: 80%;
   padding: 1.5rem 2.5rem;
   margin: 0 3rem;
-${applyMediaQuery("mobile")}{
-width: fit-content;
-}
-  p{
+  ${applyMediaQuery('mobile')} {
+    width: fit-content;
+  }
+  p {
     ${Fonts.display2}
     padding-bottom: 1rem;
   }
 
-  span{
+  span {
     ${Fonts.headline}
   }
 `;
 
-export { StyledRoot,StyledAvater , StyledSpeechBubble};
+export { StyledRoot, StyledAvater, StyledSpeechBubble };

@@ -7,3 +7,4 @@ export { MainImage_ITEM } from './main-image-slider';
 export { VALUE_ITEM } from './valueItem';
 export { LiveProgram, GroupProgram, PersonalAppProgram } from './ProgramItem';
 export { COMMON_FAQ_ITEM } from './FAQItem';
+export { News_ITEM } from './newsItem';

@@ -1,5 +1,11 @@
 import Image from 'next/image';
-import { StyledProgramTitleContainer,StyledProgramContainer, ProgramLabel, ProgramDescripition, PrgramText } from './style';
+import {
+  StyledProgramTitleContainer,
+  StyledProgramContainer,
+  ProgramLabel,
+  ProgramDescripition,
+  PrgramText,
+} from './style';
 import { StyledTitle } from 'components/common';
 
 interface IProgramBox {

@@ -6,6 +6,7 @@ import { DONUT_ITEM, MainImage_ITEM } from 'constant';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
 import { Carousel } from 'react-responsive-carousel';
+import { NewsWrapper } from 'components/main/Wrapper';
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <HomeMain>
-      <ImageSlideWrapper>
+        <ImageSlideWrapper>
           <Carousel showThumbs={false} showArrows={false} autoPlay={true} showStatus={false}>
             {MainImage_ITEM.map((item, idx) => (
               <ImageSlider
@@ -41,21 +42,9 @@ const Home: NextPage = () => {
         <ValueWrapper />
         <ProgramWrapper />
         <ReviewWrapper />
+        <NewsWrapper />
         <FAQWrapper />
       </HomeMain>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   );
 };
@@ -86,7 +75,7 @@ const DonutWrapper = styled.section`
 `;
 
 const ImageSlideWrapper = styled.section`
-padding: 0 !important;
+  padding: 0 !important;
   background-color: ${Colors.blue100};
   ${applyMediaQuery('mobile')} {
     flex-direction: column;
