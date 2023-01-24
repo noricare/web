@@ -24,19 +24,22 @@ export const ImageSliderWrapper = () => {
   );
 };
 
-const StyledRoot = styled.section`
+const StyledRoot = styled.div`
   padding: 0 !important;
   background-color: ${Colors.blue100};
-  .slide {
+
+
+
+ /*.slide {
     div {
       height: 100%;
 
       span {
-        height: 100% !important;
+        height: 100%;
         width: 100% !important;
       }
     }
-  }
+  }*/
   ${applyMediaQuery('mobile')} {
     flex-direction: column;
   }

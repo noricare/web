@@ -18,7 +18,7 @@ export const FAQWrapper = () => {
 
 const StyledRoot = styled.section`
   background-color: ${Colors.white};
-  min-height: 75rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;

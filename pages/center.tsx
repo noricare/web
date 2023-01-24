@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
+import type { NextPage } from 'next';
 import { ImageMain } from 'components/common';
 import Head from 'next/head';
 import { HomeMain } from '.';
 import { ProgramWrapper } from 'components/center';
 
-function Center() {
+const Center: NextPage = () => {
   return (
     <div>
       <Head>

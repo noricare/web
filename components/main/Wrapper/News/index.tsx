@@ -9,7 +9,7 @@ export const NewsWrapper = () => {
       <NewsTitle />
       <NewsContainer>
         {News_ITEM.map(({ label, description, width, height, src, url }, idx) => (
-          <NewsBox label={label} description={description} width={width} height={height} src={src} url={url} />
+          <NewsBox key={label} label={label} description={description} width={width} height={height} src={src} url={url} />
         ))}
       </NewsContainer>
     </StyledRoot>

@@ -1,5 +1,7 @@
-import {Toggle} from "../../Item";
+import {Toggle, VOD} from "../../Item";
+import { CenterWrapper } from "./center";
 import { useState } from 'react';
+import styled from "@emotion/styled";
 
 
 
@@ -10,7 +12,26 @@ export const ProgramWrapper=()=>{
     setToogleState(!toggleState);
     console.log('토글 클릭');
   };
-return (<Toggle onClick={handleToggleClick} state={toggleState}/>)
+return (
+<StyledRoot>
+
+<Toggle onClick={handleToggleClick} state={toggleState}/>
+{toggleState && <CenterWrapper/>}
+{!toggleState && <VOD/>}
+
+</StyledRoot>
+
+
+
+)
 
 
 }
+
+
+const StyledRoot=styled.section`
+display: flex;
+flex-direction: column;
+align-items: center;
+
+`;

@@ -1,4 +1,5 @@
 export const BorderRadius = {
+  extraLarge:"100px",
   large: '40px',
   regular: '10px',
 };

@@ -41,7 +41,7 @@ export const HomeMain = styled.main`
   section {
     /*레이아웃 관련*/
     padding: 10.5rem 10rem;
-
+    min-height: 75rem;
     ${applyMediaQuery('mobile')} {
       padding: 2.5rem 3rem;
     }

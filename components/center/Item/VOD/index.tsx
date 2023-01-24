@@ -1,3 +1,6 @@
+import {StyledRoot} from "./style";
+
+
 export const VOD = () => {
-  return <div>VOD</div>;
+  return <StyledRoot>VOD</StyledRoot>;
 };

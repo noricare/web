@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { StyledRoot, StyledToggleElement } from './style';
 
 
@@ -13,7 +12,7 @@ export const Toggle = ({onClick, state}:IToggle) => {
     <StyledRoot>
       <StyledToggleElement onClick={onClick} state={state}>
         파견 수업
-      </StyledToggleElement>{' '}
+      </StyledToggleElement>
       <StyledToggleElement onClick={onClick} state={!state}>
         라이브 수업
       </StyledToggleElement>

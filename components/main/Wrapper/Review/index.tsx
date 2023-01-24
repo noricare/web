@@ -11,7 +11,7 @@ export const ReviewWrapper = () => {
       <ReviewTitle />
       <ReviewContainer>
         {list.map((item, idx) => (
-          <Review position={idx} />
+          <Review position={idx} key={idx}/>
         ))}
       </ReviewContainer>
     </StyledRoot>
@@ -20,7 +20,6 @@ export const ReviewWrapper = () => {
 
 const StyledRoot = styled.section`
   background-color: ${Colors.blue200}20;
-  min-height: 75rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
