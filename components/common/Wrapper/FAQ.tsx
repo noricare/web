@@ -1,15 +1,25 @@
-import { COMMON_FAQ_ITEM } from 'constant/FAQItem';
-import { FAQ } from 'components/common';
+import { FAQ } from 'components/common/Item/FAQ';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
 
-export const FAQWrapper = () => {
+
+interface FAQ{
+  q:string;
+  ans:string;
+}
+
+
+interface IFAQWrapper{
+  title:string,
+  item:FAQ[]
+}
+export const FAQWrapper = ({title, item}:IFAQWrapper) => {
   return (
     <StyledRoot>
-      <TitleWrapper>노리케어 자주 묻는 질문</TitleWrapper>
+      <TitleWrapper>{title} 자주 묻는 질문</TitleWrapper>
       <ContentWrapper>
-        {COMMON_FAQ_ITEM.map((item, idx) => (
-          <FAQ question={item.q} answer={item.ans} key={item.q} />
+        {item.map(({ans, q}, idx) => (
+          <FAQ question={q} answer={ans} key={q} />
         ))}
       </ContentWrapper>
     </StyledRoot>

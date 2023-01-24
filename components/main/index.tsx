@@ -5,7 +5,6 @@ export { ImageSlider } from './Item/ImageSlider';
 export {
   ValueWrapper,
   ProgramWrapper,
-  FAQWrapper,
   ReviewWrapper,
   DonutWrapper,
   ImageSliderWrapper,

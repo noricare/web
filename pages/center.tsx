@@ -1,8 +1,9 @@
 import type { NextPage } from 'next';
-import { ImageMain } from 'components/common';
+import { ImageMain,FAQWrapper } from 'components/common';
 import Head from 'next/head';
 import { HomeMain } from '.';
 import { ProgramWrapper } from 'components/center';
+import { COMMON_FAQ_ITEM } from 'constant/FAQItem';
 
 const Center: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Center: NextPage = () => {
       <HomeMain>
         <ImageMain />
         <ProgramWrapper />
+        <FAQWrapper title="노리케어" item={COMMON_FAQ_ITEM}/>
       </HomeMain>
     </div>
   );

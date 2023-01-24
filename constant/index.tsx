@@ -9,3 +9,4 @@ export { LiveProgram, GroupProgram, PersonalAppProgram } from './ProgramItem';
 export { COMMON_FAQ_ITEM } from './FAQItem';
 export { News_ITEM } from './newsItem';
 export {CenterLive_ITEM} from "./center-live-item";
+export {CenterVOD_ITEM} from "./center-VOD-item";
