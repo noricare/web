@@ -1,10 +1,17 @@
 import { StyledRoot } from './style';
 import Image from 'next/image';
 
-export const ImageMain = () => {
+interface IImageMain {
+  src: string;
+  alt: string;
+  width: string;
+  height: string;
+}
+
+export const ImageMain = ({ src, alt, width, height }: IImageMain) => {
   return (
     <StyledRoot>
-      <Image src="/centerB2B.jpg" alt="노리케어 기관 수업" width="1650" height="810" />
+      <Image src={src} alt={alt} width={width} height={height} />
     </StyledRoot>
   );
 };

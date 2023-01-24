@@ -1,4 +1,1 @@
-export {
-  ProgramWrapper,
-
-} from './Wrapper/Program';
+export { ProgramWrapper } from './Wrapper/Program';

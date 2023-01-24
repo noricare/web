@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { FAQWrapper } from 'components/common';
-import {COMMON_FAQ_ITEM} from "constant";
+import { COMMON_FAQ_ITEM } from 'constant';
 import {
   DonutWrapper,
   ImageSliderWrapper,
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <ProgramWrapper />
         <ReviewWrapper />
         <NewsWrapper />
-        <FAQWrapper title="노리케어" item={COMMON_FAQ_ITEM}/>
+        <FAQWrapper title="노리케어" item={COMMON_FAQ_ITEM} />
       </HomeMain>
     </div>
   );

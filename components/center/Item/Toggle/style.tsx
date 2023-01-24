@@ -2,10 +2,10 @@ import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 
 const StyledRoot = styled.div`
-background-color: ${Colors.gray100};
-width: fit-content;
-border-radius: ${BorderRadius.extraLarge};
-padding:1rem 2rem;
+  background-color: ${Colors.gray100};
+  width: fit-content;
+  border-radius: ${BorderRadius.extraLarge};
+  padding: 1rem 2rem;
 `;
 
 const StyledToggleElement = styled.span<{ state: boolean }>`

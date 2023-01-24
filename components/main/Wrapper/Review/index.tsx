@@ -11,7 +11,7 @@ export const ReviewWrapper = () => {
       <ReviewTitle />
       <ReviewContainer>
         {list.map((item, idx) => (
-          <Review position={idx} key={idx}/>
+          <Review position={idx} key={idx} />
         ))}
       </ReviewContainer>
     </StyledRoot>

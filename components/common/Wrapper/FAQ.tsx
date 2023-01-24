@@ -2,23 +2,21 @@ import { FAQ } from 'components/common/Item/FAQ';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
 
-
-interface FAQ{
-  q:string;
-  ans:string;
+interface FAQ {
+  q: string;
+  ans: string;
 }
 
-
-interface IFAQWrapper{
-  title:string,
-  item:FAQ[]
+interface IFAQWrapper {
+  title: string;
+  item: FAQ[];
 }
-export const FAQWrapper = ({title, item}:IFAQWrapper) => {
+export const FAQWrapper = ({ title, item }: IFAQWrapper) => {
   return (
     <StyledRoot>
       <TitleWrapper>{title} 자주 묻는 질문</TitleWrapper>
       <ContentWrapper>
-        {item.map(({ans, q}, idx) => (
+        {item.map(({ ans, q }, idx) => (
           <FAQ question={q} answer={ans} key={q} />
         ))}
       </ContentWrapper>

@@ -28,9 +28,7 @@ const StyledRoot = styled.div`
   padding: 0 !important;
   background-color: ${Colors.blue100};
 
-
-
- /*.slide {
+  /*.slide {
     div {
       height: 100%;
 

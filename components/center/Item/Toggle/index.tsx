@@ -1,13 +1,11 @@
 import { StyledRoot, StyledToggleElement } from './style';
 
-
-interface IToggle{
-  onClick:()=>void;
-  state:boolean
+interface IToggle {
+  onClick: () => void;
+  state: boolean;
 }
 
-export const Toggle = ({onClick, state}:IToggle) => {
-
+export const Toggle = ({ onClick, state }: IToggle) => {
   return (
     <StyledRoot>
       <StyledToggleElement onClick={onClick} state={state}>
