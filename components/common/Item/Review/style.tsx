@@ -22,7 +22,7 @@ const StyledAvater = styled.div`
   align-items: center;
   img {
     border-radius: 50%;
-      box-shadow: ${DropShadow.regular};
+    box-shadow: ${DropShadow.regular};
   }
 
   p {
@@ -34,8 +34,8 @@ const StyledAvater = styled.div`
 const StyledSpeechBubble = styled.div`
   border-radius: ${BorderRadius.large};
   border: solid ${Colors.blue300} 3px;
-    box-shadow: ${DropShadow.regular};
-    background-color: ${Colors.white};
+  box-shadow: ${DropShadow.regular};
+  background-color: ${Colors.white};
   width: 80%;
   padding: 1.5rem 2.5rem;
   margin: 0 3rem;

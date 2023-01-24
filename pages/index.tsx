@@ -1,7 +1,14 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { DonutChart, ImageSlider, ValueWrapper, ProgramWrapper, FAQWrapper, ReviewWrapper } from 'components/main';
+import {
+  DonutWrapper,
+  ImageSliderWrapper,
+  ValueWrapper,
+  ProgramWrapper,
+  FAQWrapper,
+  ReviewWrapper,
+} from 'components/main';
 import { DONUT_ITEM, MainImage_ITEM } from 'constant';
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
@@ -18,27 +25,8 @@ const Home: NextPage = () => {
       </Head>
 
       <HomeMain>
-        <ImageSlideWrapper>
-          <Carousel showThumbs={false} showArrows={false} autoPlay={true} showStatus={false}>
-            {MainImage_ITEM.map((item, idx) => (
-              <ImageSlider
-                key={item.label}
-                src={item.srl}
-                label={item.label}
-                width={item.width}
-                height={item.height}
-                subTitle00={item.subTitle00}
-                subTitle01={item.subTitle01}
-              />
-            ))}
-          </Carousel>
-        </ImageSlideWrapper>
-        <DonutWrapper>
-          {DONUT_ITEM.map((item, idx) => (
-            <DonutChart percent={item.percent} key={item.title} label={item.title} description={item.description} />
-          ))}
-        </DonutWrapper>
-
+        <ImageSliderWrapper />
+        <DonutWrapper />
         <ValueWrapper />
         <ProgramWrapper />
         <ReviewWrapper />
@@ -58,35 +46,6 @@ const HomeMain = styled.main`
 
     ${applyMediaQuery('mobile')} {
       padding: 2.5rem 3rem;
-    }
-  }
-`;
-
-const DonutWrapper = styled.section`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  background-color: ${Colors.white};
-  ${applyMediaQuery('mobile')} {
-    flex-direction: column;
-  }
-`;
-
-const ImageSlideWrapper = styled.section`
-  padding: 0 !important;
-  background-color: ${Colors.blue100};
-  ${applyMediaQuery('mobile')} {
-    flex-direction: column;
-    .slide {
-      div {
-        height: 100%;
-
-        span {
-          height: 100% !important;
-        }
-      }
     }
   }
 `;
