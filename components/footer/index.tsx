@@ -1,13 +1,15 @@
-import { Slogan, Description, Channel } from './item';
-import { StyledFooter, StyledWrapper } from './style';
+import { Slogan, Description, Channel, Menu } from './Item';
+import { StyledFooter, SloganWrapper, MenuWrapper } from './style';
 
 function MainFooter() {
   return (
     <StyledFooter>
-      <StyledWrapper>
-        <Channel />
+      <SloganWrapper>
         <Slogan />
-      </StyledWrapper>
+      </SloganWrapper>
+      <MenuWrapper>
+        <Menu />
+      </MenuWrapper>
       <Description />
     </StyledFooter>
   );

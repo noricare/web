@@ -1,6 +1,6 @@
 export const MainImage_ITEM = [
   {
-    srl: '/main-slide/0.jpg',
+    srl: '/centerB2B.jpg',
     label: '노리케어 원스톱 패키지로 해결',
     subTitle00: '매번 어렵고 번거로운',
     subTitle01: '강사 선정, 프로그램 운영, 결과 보고',

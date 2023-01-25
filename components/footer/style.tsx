@@ -8,7 +8,6 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
   /* 배경 */
   background-color: ${Colors.blue100};
   /* 하단 고정 */
@@ -19,14 +18,27 @@ const StyledFooter = styled.footer`
   }
 `;
 
-const StyledWrapper = styled.div`
+const SloganWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  width: 60rem;
+  flex-direction: column;
   justify-content: space-between;
+
   ${applyMediaQuery('mobile')} {
     flex-direction: column;
   }
 `;
 
-export { StyledFooter, StyledWrapper };
+const MenuWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 60rem;
+  justify-content: space-around;
+
+  ${applyMediaQuery('mobile')} {
+    width: 20rem;
+    padding: 1.5rem 0;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+`;
+export { StyledFooter, SloganWrapper, MenuWrapper };

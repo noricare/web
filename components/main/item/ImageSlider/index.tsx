@@ -1,5 +1,5 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { StyledRoot, TextWrapper } from './style';
+import { StyledRoot } from './style';
 import Image from 'next/image';
 interface IImageSlider {
   src: string;
@@ -17,6 +17,7 @@ export const ImageSlider = ({ src, label, subTitle00, subTitle01, width, height 
       {/*<TextWrapper>
         <p>{subTitle00}</p>
         <p>{subTitle01}</p>
+        <LabelWrapper>{subTitle01}</LabelWrapper>
       </TextWrapper>*/}
     </StyledRoot>
   );
