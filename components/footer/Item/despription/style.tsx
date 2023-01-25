@@ -2,7 +2,7 @@ import { applyMediaQuery, Colors, Fonts } from 'styles';
 import styled from '@emotion/styled';
 
 const StyledRoot = styled.div`
-  color: ${Colors.gray300};
+  color: ${Colors.gray400};
   ${Fonts.subhead2}
 
   ${applyMediaQuery('mobile')} {

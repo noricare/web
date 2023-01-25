@@ -24,7 +24,7 @@ export const VODTitle = () => {
 export const VODBox = ({ src, height, width }: IVODBox) => {
   return (
     <StyledBoxRoot>
-      <Image src={src} height={height} width={width} />
+      <Image src={src} height={height} width={width}  alt="노리케어 VOD 라이브 수업"/>
     </StyledBoxRoot>
   );
 };
