@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
 
 interface FAQ {
-  q: string;
-  ans: string;
+  question: string;
+  answer: string;
 }
 
 interface IFAQWrapper {
@@ -16,8 +16,8 @@ export const FAQWrapper = ({ title, item }: IFAQWrapper) => {
     <StyledRoot>
       <TitleWrapper>{title} 자주 묻는 질문</TitleWrapper>
       <ContentWrapper>
-        {item.map(({ ans, q }, idx) => (
-          <FAQ question={q} answer={ans} key={idx} />
+        {item.map(({ answer, question }, idx) => (
+          <FAQ question={question} answer={answer} key={idx} />
         ))}
       </ContentWrapper>
     </StyledRoot>

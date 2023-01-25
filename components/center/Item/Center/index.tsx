@@ -25,7 +25,7 @@ export const CenterTitle = () => {
 export const CenterBox = ({ src, height, width, label }: ICenterBox) => {
   return (
     <StyledBoxRoot>
-      <Image src={src} height={height} width={width} />
+      <Image src={src} height={height} width={width} alt={label}  priority={true}/>
       <p>{label}</p>
     </StyledBoxRoot>
   );

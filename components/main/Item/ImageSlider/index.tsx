@@ -13,7 +13,7 @@ interface IImageSlider {
 export const ImageSlider = ({ src, label, subTitle00, subTitle01, width, height }: IImageSlider) => {
   return (
     <StyledRoot>
-      <Image src={src} alt={label} width={width} height={height} />
+      <Image src={src} alt={label} width={width} height={height}  priority={true}/>
       {/*<TextWrapper>
         <p>{subTitle00}</p>
         <p>{subTitle01}</p>
