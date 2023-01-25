@@ -1,9 +1,9 @@
 import { StyledTitleRoot, StyledBoxRoot } from './style';
 import { StyledTitle } from 'components/common';
 
-interface IStrengthBox{
-  label:string;
-  description:string;
+interface IStrengthBox {
+  label: string;
+  description: string;
 }
 
 export const StrengthTitle = () => {
@@ -19,8 +19,11 @@ export const StrengthTitle = () => {
   );
 };
 
-export const StrengthBox = ({label, description}:IStrengthBox) => {
-  return <StyledBoxRoot><p>{label}</p>
-  <span>{description}</span>
-  </StyledBoxRoot>;
+export const StrengthBox = ({ label, description }: IStrengthBox) => {
+  return (
+    <StyledBoxRoot>
+      <p>{label}</p>
+      <span>{description}</span>
+    </StyledBoxRoot>
+  );
 };

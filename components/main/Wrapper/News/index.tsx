@@ -10,7 +10,7 @@ export const NewsWrapper = () => {
       <NewsContainer>
         {News_ITEM.map(({ label, description, width, height, src, url }, idx) => (
           <NewsBox
-            key={label}
+            key={idx}
             label={label}
             description={description}
             width={width}

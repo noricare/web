@@ -6,7 +6,7 @@ export const Description = () => {
     <StyledRoot>
       <div>
         {FooterInfo.map((item, idx) => (
-          <p key={item}>{item}</p>
+          <p key={idx}>{item}</p>
         ))}
       </div>
     </StyledRoot>

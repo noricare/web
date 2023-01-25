@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 
-const StyleTitleRoot = styled.div`
+const StyleTitleRoot = styled.h1`
   text-align: center;
   margin: 5rem 0 8rem 0;
 `;

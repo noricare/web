@@ -8,15 +8,15 @@ export const ValueWrapper = () => {
     <StyledRoot>
       <ValueTitle />
       <ValueBoxWrapper>
-        {VALUE_ITEM.map((item, idx) => (
+        {VALUE_ITEM.map(({ src, label,subTitle00, subTitle01, height, width }, idx) => (
           <ValueBox
-            key={item.label}
-            src={item.src}
-            label={item.label}
-            subTitle00={item.subTitle00}
-            subTitle01={item.subTitle01}
-            height={item.height}
-            width={item.width}
+            key={idx}
+            src={src}
+            label={label}
+            subTitle00={subTitle00}
+            subTitle01={subTitle01}
+            height={height}
+            width={width}
           />
         ))}
       </ValueBoxWrapper>

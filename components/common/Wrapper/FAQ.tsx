@@ -17,7 +17,7 @@ export const FAQWrapper = ({ title, item }: IFAQWrapper) => {
       <TitleWrapper>{title} 자주 묻는 질문</TitleWrapper>
       <ContentWrapper>
         {item.map(({ ans, q }, idx) => (
-          <FAQ question={q} answer={ans} key={q} />
+          <FAQ question={q} answer={ans} key={idx} />
         ))}
       </ContentWrapper>
     </StyledRoot>

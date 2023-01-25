@@ -9,13 +9,7 @@ export const StrengthWrapper = () => {
       <StrengthTitle />
       <StrengthBoxWrapper>
         {PTStrength_ITEM.map(({ label, description }, idx) => (
-          <StrengthBox
-          key={idx}
-
-            label={label}
-
-            description={description}
-          />
+          <StrengthBox key={idx} label={label} description={description} />
         ))}
       </StrengthBoxWrapper>
     </StyledRoot>
@@ -30,11 +24,10 @@ const StyledRoot = styled.section`
 
 const StrengthBoxWrapper = styled.div`
   display: grid;
- /*grid-template-columns: repeat(3, 1fr);*/
- grid-auto-rows: minmax(1fr, auto);
+  /*grid-template-columns: repeat(3, 1fr);*/
+  grid-auto-rows: minmax(1fr, auto);
 
-
- grid-auto-flow: column;
+  grid-auto-flow: column;
   ${applyMediaQuery('mobile')} {
     grid-auto-flow: row;
     grid-gap: 1.5rem;

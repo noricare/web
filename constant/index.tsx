@@ -11,5 +11,5 @@ export { News_ITEM } from './newsItem';
 export { CenterLive_ITEM } from './center-live-item';
 export { CenterVOD_ITEM } from './center-VOD-item';
 export { PTFeature_ITEM } from './b2c-feature-item';
-export {PTStrength_ITEM} from "./b2c-strength-item";
-export {PTProcess_ITEM} from "./b2c-process-item";
+export { PTStrength_ITEM } from './b2c-strength-item';
+export { PTProcess_ITEM } from './b2c-process-item';

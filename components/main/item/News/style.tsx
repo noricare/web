@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 
-const StyledTitleRoot = styled.div`
+const StyledTitleRoot = styled.h1`
   padding-bottom: 7.2rem;
 `;
 

@@ -8,15 +8,15 @@ export const ImageSliderWrapper = () => {
   return (
     <StyledRoot>
       <Carousel showThumbs={false} showArrows={false} autoPlay={true} showStatus={false}>
-        {MainImage_ITEM.map((item, idx) => (
+        {MainImage_ITEM.map(({srl, label, width, height, subTitle00, subTitle01}, idx) => (
           <ImageSlider
-            key={item.label}
-            src={item.srl}
-            label={item.label}
-            width={item.width}
-            height={item.height}
-            subTitle00={item.subTitle00}
-            subTitle01={item.subTitle01}
+            key={idx}
+            src={srl}
+            label={label}
+            width={width}
+            height={height}
+            subTitle00={subTitle00}
+            subTitle01={subTitle01}
           />
         ))}
       </Carousel>

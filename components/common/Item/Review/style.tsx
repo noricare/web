@@ -31,14 +31,14 @@ const StyledAvater = styled.div`
     color:${Colors.gray300};
   }
 `;
-const StyledSpeechBubble = styled.div`
+const StyledSpeechBubble = styled.div<{ position: number }>`
   border-radius: ${BorderRadius.large};
   border: solid ${Colors.blue300} 3px;
   box-shadow: ${DropShadow.regular};
   background-color: ${Colors.white};
   width: 80%;
   padding: 1.5rem 2.5rem;
-  margin: 0 3rem;
+  margin: 0 2.5rem;
   ${applyMediaQuery('mobile')} {
     width: fit-content;
   }

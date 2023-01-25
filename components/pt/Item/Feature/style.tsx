@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 
-const StyledTitleRoot = styled.div`
+const StyledTitleRoot = styled.h1`
   text-align: center;
   margin-bottom: 7.2rem;
 `;
@@ -13,7 +13,7 @@ const StyledBoxRoot = styled.div`
   */
   border-radius: ${BorderRadius.regular};
   border: 3px solid ${Colors.blue600};
-box-shadow: ${DropShadow.regular};
+  box-shadow: ${DropShadow.regular};
   display: flex;
   flex-direction: column;
   align-items: center;
