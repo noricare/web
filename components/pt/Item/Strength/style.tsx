@@ -10,7 +10,10 @@ width: 25rem;
 height: 25rem;
 border-radius: 50%;
 padding:3.5rem;
+margin: auto;
 border: 3px solid ${Colors.blue600};
+background-color: ${Colors.white};
+box-shadow: ${DropShadow.regular};
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -26,6 +29,20 @@ span{
   color:${Colors.black};
   text-align: center;
 }
+
+
+  ${applyMediaQuery('mobile')} {
+    width:20rem;
+    height: 20rem;
+    padding: 1.5rem;
+    p{
+      ${Fonts.display1}
+      margin-bottom: 0.8rem;
+    }
+    span{
+      ${Fonts.headline}
+    }
+  }
 `;
 
 export { StyledTitleRoot, StyledBoxRoot };

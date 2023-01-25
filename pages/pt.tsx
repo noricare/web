@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { HomeMain } from '.';
 import { ImageMain, FAQWrapper } from 'components/common';
 import { COMMON_FAQ_ITEM } from 'constant/FAQItem';
-import { FeatureWrapper, StrengthWrapper } from 'components/pt/Wrapper';
+import { FeatureWrapper, StrengthWrapper,ProcessWrapper } from 'components/pt/Wrapper';
 
 const Pt: NextPage = () => {
   return (
@@ -18,6 +18,7 @@ const Pt: NextPage = () => {
         <ImageMain src="/ptB2C.jpg" alt="노리케어 방문 PT" width="1650" height="810" />
         <StrengthWrapper/>
         <FeatureWrapper />
+        <ProcessWrapper/>
         <FAQWrapper title="방문 PT" item={COMMON_FAQ_ITEM} />
       </HomeMain>
     </div>

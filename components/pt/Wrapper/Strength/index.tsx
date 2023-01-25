@@ -25,12 +25,18 @@ export const StrengthWrapper = () => {
 const StyledRoot = styled.section`
   display: flex;
   flex-direction: column;
+  background-color: ${Colors.blue200}20;
 `;
 
 const StrengthBoxWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+ /*grid-template-columns: repeat(3, 1fr);*/
+ grid-auto-rows: minmax(1fr, auto);
+
+
+ grid-auto-flow: column;
   ${applyMediaQuery('mobile')} {
+    grid-auto-flow: row;
     grid-gap: 1.5rem;
   }
 `;

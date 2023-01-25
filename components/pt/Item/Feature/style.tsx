@@ -13,7 +13,7 @@ const StyledBoxRoot = styled.div`
   */
   border-radius: ${BorderRadius.regular};
   border: 3px solid ${Colors.blue600};
-
+box-shadow: ${DropShadow.regular};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,7 @@ const StyledBoxRoot = styled.div`
   }
 
   ${applyMediaQuery('mobile')} {
-    padding: 2rem;
+    padding: 1.5rem;
     p {
       ${Fonts.display1}
     }

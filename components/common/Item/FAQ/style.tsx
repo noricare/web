@@ -19,6 +19,9 @@ const QuestionWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+    ${applyMediaQuery('mobile')} {
+     ${Fonts.display1}
+  }
 `;
 
 const AnswerWrapper = styled.div<{ showState: boolean }>`

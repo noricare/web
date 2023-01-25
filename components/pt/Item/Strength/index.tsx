@@ -10,7 +10,7 @@ export const StrengthTitle = () => {
   return (
     <StyledTitleRoot>
       <StyledTitle>
-        남다른 <span>노인 홈 트레이님</span>
+        남다른 <span>노인 홈 트레이닝</span>
       </StyledTitle>
       <StyledTitle>
         <span>인지 및 신체 기능 맞춤형</span> 방문 PT
