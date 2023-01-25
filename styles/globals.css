@@ -9,6 +9,7 @@ html {
   margin: 0;
   font-size: 62.5%;
   font-family: 'Pretendard';
+  overflow-x: hidden;
 }
 p {
   margin: 0;
