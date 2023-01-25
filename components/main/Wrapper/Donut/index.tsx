@@ -6,7 +6,7 @@ import { DonutChart } from 'components/main/Item';
 export const DonutWrapper = () => {
   return (
     <StyledRoot>
-      {DONUT_ITEM.map(({percent,  title, description}, idx) => (
+      {DONUT_ITEM.map(({ percent, title, description }, idx) => (
         <DonutChart percent={percent} key={idx} label={title} description={description} />
       ))}
     </StyledRoot>

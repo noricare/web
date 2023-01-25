@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
-import SEO from "seo.config";
+import SEO from 'seo.config';
 // import Font Awesome CSS
 import '@fortawesome/fontawesome-svg-core/styles.css';
 

@@ -10,7 +10,7 @@ interface INavMenu {
 export const NavMenu = ({ isToggleOpen, onClick }: INavMenu) => {
   return (
     <StyledRoot isToggleOpen={isToggleOpen}>
-      {NAVIGATION_ITEM.map(({text, href}, idx) => (
+      {NAVIGATION_ITEM.map(({ text, href }, idx) => (
         <li key={idx} onClick={onClick}>
           <NavItem text={text} href={href} />
         </li>

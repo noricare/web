@@ -10,7 +10,7 @@ export const CenterWrapper = () => {
       <CenterTitle />
       <CenterBoxWrapper>
         {CenterLive_ITEM.map(({ src, label, width, height }, idx) => (
-          <CenterBox src={src} label={label} width={width} height={height} key={idx}/>
+          <CenterBox src={src} label={label} width={width} height={height} key={idx} />
         ))}
       </CenterBoxWrapper>
     </StyledRoot>

@@ -11,7 +11,7 @@ export const VODWrapper = () => {
 
       <VODBOXWrapper>
         {CenterVOD_ITEM.map(({ src, height, width }, idx) => (
-          <VODBox src={src} height={height} width={width} key={idx}/>
+          <VODBox src={src} height={height} width={width} key={idx} />
         ))}
       </VODBOXWrapper>
     </StyledRoot>

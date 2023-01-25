@@ -9,7 +9,7 @@ export const ProcessWrapper = () => {
       <ProcessTitle />
       <ProcessBoxWrapper>
         {PTProcess_ITEM.map(({ label, description }, idx) => (
-          <ProcessBox label={label} description={description} key={idx}/>
+          <ProcessBox label={label} description={description} key={idx} />
         ))}
       </ProcessBoxWrapper>
     </StyledRoot>

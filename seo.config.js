@@ -1,20 +1,23 @@
 export default {
-  title: 'Next.js SEO Plugin',
-  description: 'SEO made easy for Next.js projects',
+  title: '노리케어 | 노인 운동 프로그램 | noricare',
+  description: '복지 기관 노인 맞춤 운동 + 건강기능식품 | 노인 케어 서비스, 노리케어(noricare',
   openGraph: {
     type: 'website',
-    locale: 'en_IE',
-    url: 'https://www.garymeehan.ie',
-    title: 'Next.js Seo',
-    description: 'SEO made easy for Next.js projects',
-    image:
-      'https://prismic-io.s3.amazonaws.com/gary-blog%2F3297f290-a885-4cc6-9b19-3235e3026646_default.jpg',
-    site_name: 'GaryMeehan.ie',
-    imageWidth: 1200,
-    imageHeight: 1200,
+    locale: 'ko_KR',
+    url: 'https://www.noricare.kr/',
+    title: '노리케어 | 노인 운동 프로그램 | noricare',
+    description: '복지 기관 노인 맞춤 운동 + 건강기능식품 | 노인 케어 서비스, 노리케어',
+    images: [
+      {
+        url: 'https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2bea55a8-9f05-4642-935b-48e329c8594a%2F%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_8453.png&blockId=7483eb22-8b89-4356-a740-c907bb3595cf&width=2400',
+        width: 800,
+        height: 600,
+        alt: '노리케어 (noricare)',
+      },
+    ],
+    twitter: {
+      handle: '@noricare',
+      cardType: 'summary_large_image',
+    },
   },
-  twitter: {
-    handle: '@garmeeh',
-    cardType: 'summary_large_image',
-  },
-}
+};
