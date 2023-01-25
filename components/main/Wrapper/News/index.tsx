@@ -29,8 +29,8 @@ const StyledRoot = styled.section``;
 const NewsContainer = styled.div`
   display: grid;
   grid-gap: 4rem;
-  grid-template-columns: repeat(3, minmax(40rem, 1fr));
+  grid-template-columns: repeat(3, minmax(20rem, 1fr));
   ${applyMediaQuery('mobile')} {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
