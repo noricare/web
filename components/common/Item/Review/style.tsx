@@ -31,7 +31,7 @@ const StyledAvater = styled.div`
     color:${Colors.gray300};
   }
 `;
-const StyledSpeechBubble = styled.div<{ position: number }>`
+const StyledSpeechBubble = styled.div`
   border-radius: ${BorderRadius.large};
   border: solid ${Colors.blue300} 3px;
   box-shadow: ${DropShadow.regular};

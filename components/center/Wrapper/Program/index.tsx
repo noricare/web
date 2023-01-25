@@ -1,4 +1,4 @@
-import { Toggle, VOD } from '../../Item';
+import { Toggle } from '../../Item';
 import { CenterWrapper } from './center';
 import { VODWrapper } from './VOD';
 import { useState } from 'react';
