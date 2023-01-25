@@ -17,7 +17,7 @@ const Center: NextPage = () => {
       <HomeMain>
         <ImageMain src="/centerB2B.jpg" alt="노리케어 기관 수업" width="1650" height="810" />
         <ProgramWrapper />
-        <FAQWrapper title="노리케어" item={COMMON_FAQ_ITEM} />
+        <FAQWrapper title="기관 수업" item={COMMON_FAQ_ITEM} />
       </HomeMain>
     </div>
   );

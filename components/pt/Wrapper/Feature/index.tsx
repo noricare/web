@@ -24,9 +24,9 @@ export const FeatureWrapper = () => {
 };
 
 const StyledRoot = styled.section`
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const FeatureBoxWrapper = styled.div`
@@ -37,6 +37,4 @@ const FeatureBoxWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
   }
-
-
 `;

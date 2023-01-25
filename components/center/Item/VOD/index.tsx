@@ -11,8 +11,12 @@ interface IVODBox {
 export const VODTitle = () => {
   return (
     <StyleTitleRoot>
-      <StyledTitle>현장감 있는 영상 구성과 노인 건강 운동 시퀀스</StyledTitle>
-      <StyledTitle>시설에서 다함께 노인 운동 후 차후 비교분석 결과 제공</StyledTitle>
+      <StyledTitle>
+        <span>현장감 있는 영상 </span> 구성과 노인 건강 운동 시퀀스
+      </StyledTitle>
+      <StyledTitle>
+        시설에서 다함께 노인 운동 후 차후 <span>비교분석 결과 제공</span>
+      </StyledTitle>
     </StyleTitleRoot>
   );
 };

@@ -1,16 +1,13 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 
-
 const StyledTitleRoot = styled.div`
   text-align: center;
-margin-bottom: 7.2rem;
+  margin-bottom: 7.2rem;
 `;
 
-
-
-const StyledBoxRoot=styled.div`
-  padding:3rem 4.5rem;
+const StyledBoxRoot = styled.div`
+  padding: 3rem 4.5rem;
   /*  width: 28rem;
   
   */
@@ -20,34 +17,27 @@ const StyledBoxRoot=styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-p{
-${Fonts.display2}
-color:${Colors.blue600};
-}
+  p {
+    ${Fonts.display2}
+    color:${Colors.blue600};
+  }
 
-span{
-  ${Fonts.display1}
-  color:${Colors.black};
-  text-align: center;
-}
+  span {
+    ${Fonts.display1}
+    color:${Colors.black};
+    text-align: center;
+  }
 
   ${applyMediaQuery('mobile')} {
     padding: 2rem;
-    p{
-${Fonts.display1}
+    p {
+      ${Fonts.display1}
+    }
 
-}
-
-span{
-  ${Fonts.headline}
-
-}
+    span {
+      ${Fonts.headline}
+    }
   }
-
 `;
 
-
-export {
-  StyledTitleRoot,
-  StyledBoxRoot
-}
+export { StyledTitleRoot, StyledBoxRoot };

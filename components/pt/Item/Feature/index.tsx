@@ -1,9 +1,7 @@
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 import { StyledTitle, ImageMain } from 'components/common';
-import {
-  StyledTitleRoot, StyledBoxRoot
-} from "./style";
+import { StyledTitleRoot, StyledBoxRoot } from './style';
 
 interface IFeatureBox {
   src: string;
@@ -20,7 +18,9 @@ export const FeatureTitle = () => {
         {' '}
         <span>독보적인 </span>노리케어 방문 PT
       </StyledTitle>
-      <StyledTitle>노인 운동 맞춤형 솔루션</StyledTitle>
+      <StyledTitle>
+        노인 <span>운동 맞춤형 솔루션</span>
+      </StyledTitle>
     </StyledTitleRoot>
   );
 };

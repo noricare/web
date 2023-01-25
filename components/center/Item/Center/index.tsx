@@ -12,8 +12,12 @@ interface ICenterBox {
 export const CenterTitle = () => {
   return (
     <StyleTitleRoot>
-      <StyledTitle>시설 단체 회원 맞춤 재미있고 특색있는 노인 운동 루틴</StyledTitle>
-      <StyledTitle>지도사와 섬세한 코칭 아래 활기찬 시니어 피트니스 현장!</StyledTitle>
+      <StyledTitle>
+        <span>시설 단체 회원 맞춤</span> 재미있고 특색있는 노인 운동 루틴
+      </StyledTitle>
+      <StyledTitle>
+        지도사와 섬세한 코칭 아래 활기찬 <span>시니어 피트니스 현장!</span>
+      </StyledTitle>
     </StyleTitleRoot>
   );
 };
