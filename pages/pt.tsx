@@ -35,7 +35,7 @@ const Pt: NextPage = () => {
         <StrengthWrapper />
         <FeatureWrapper />
         <ProcessWrapper />
-        <FAQWrapper title="방문 PT" item={COMMON_FAQ_ITEM} />
+        {/*<FAQWrapper title="방문 PT" item={COMMON_FAQ_ITEM} />*/}
       </HomeMain>
     </div>
   );
