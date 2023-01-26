@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo';
 import { HomeMain } from '.';
 import { ImageMain, FAQWrapper } from 'components/common';
 import { COMMON_FAQ_ITEM } from 'constant/FAQItem';
-import { FeatureWrapper, StrengthWrapper, ProcessWrapper } from 'components/pt/Wrapper';
+import { FeatureWrapper, StrengthWrapper, ProcessWrapper,ImageMainWrapper } from 'components/pt/Wrapper';
 
 const Pt: NextPage = () => {
   return (
@@ -30,7 +30,7 @@ const Pt: NextPage = () => {
       />
 
       <HomeMain>
-        {/*<ImageMain src="/ptB2C.jpg" alt="노리케어 방문 PT" width="1650" height="810" />*/}
+        <ImageMainWrapper src="/ptB2C.jpg" alt="노리케어 방문 PT" width="1650" height="810" />
         <StrengthWrapper />
         <FeatureWrapper />
         <ProcessWrapper />

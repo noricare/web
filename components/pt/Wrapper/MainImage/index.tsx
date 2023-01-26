@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { applyMediaQuery, BorderRadius, Colors, Fonts } from 'styles';
+import { applyMediaQuery, BorderRadius, Colors, DropShadow, Fonts } from 'styles';
 
 
 
@@ -23,12 +23,9 @@ export const ImageMainWrapper = ({ src, alt, width, height }: IImageMainWrapper)
 
       <UnderTitleWrapper>
        라이브 영상으로 다양하게 만나다
-       <StyledImageTitle>노리케어 under 수업</StyledImageTitle>
+       <StyledImageTitle>노리케어 라이브 수업</StyledImageTitle>
       </UnderTitleWrapper>
-      <UpperTitleWrapper>
-       라이브 영상으로 다양하게 만나다
-       <StyledImageTitle>노리케어 upper 수업</StyledImageTitle>
-      </UpperTitleWrapper>
+
       </StyledRoot>
 
     </div>
@@ -39,21 +36,6 @@ export const ImageMainWrapper = ({ src, alt, width, height }: IImageMainWrapper)
 const StyledRoot = styled.div`
 position: relative;	
   ${applyMediaQuery('mobile')} {
-  }
-`;
-
-const UnderTitleWrapper=styled.div`
-
-	bottom: 15%;
-	right: 10%;
-  transform: translate( 15%, 25% );
-	position: absolute;
-
-  color:${Colors.white};
-  ${Fonts.display4}
-
-  ${applyMediaQuery('mobile')} {
-    ${Fonts.subhead3}
   }
 `;
 
@@ -74,17 +56,17 @@ ${applyMediaQuery('mobile')} {
 `;
 
 
-const UpperTitleWrapper=styled.div`
+const UnderTitleWrapper=styled.div`
+
+	bottom: 15%;
+	right: 10%;
+  transform: translate( 15%, 25% );
 	position: absolute;
-	top: 10%;
-	left: 10%;
-  transform: translate( -15%, -20% );
+box-shadow: ${DropShadow.regular};
   color:${Colors.white};
   ${Fonts.display4}
-text-align: end;
+
   ${applyMediaQuery('mobile')} {
     ${Fonts.subhead3}
   }
-
-
 `;

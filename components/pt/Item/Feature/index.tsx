@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import Image from 'next/image';
 import { applyMediaQuery, Colors, Fonts, BorderRadius, DropShadow } from 'styles';
 import { StyledTitle, ImageMain } from 'components/common';
 import { StyledTitleRoot, StyledBoxRoot } from './style';
@@ -27,7 +28,7 @@ export const FeatureTitle = () => {
 export const FeatureBox = ({ src, label, width, height, description }: IFeatureBox) => {
   return (
     <StyledBoxRoot>
-      <ImageMain src={src} width={width} height={height} alt={label} />
+      <Image src={src} width={width} height={height} alt={label} />
       <p>{label}</p>
       <span>{description}</span>
     </StyledBoxRoot>
