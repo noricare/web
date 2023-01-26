@@ -23,7 +23,7 @@ export const NewsTitle = () => {
 export const NewsBox = ({ src, height, width, label, description, url }: INewsBox) => {
   return (
     <StyledNewsBoxRoot>
-      <Image src={src} height={height} width={width} alt={label}/>
+      <Image src={src} height={height} width={width} alt={label} />
       <p>{label}</p>
       <span>{description}</span>
       <a href={url} target="_blank">

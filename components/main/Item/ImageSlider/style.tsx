@@ -2,8 +2,10 @@ import styled from '@emotion/styled';
 import { applyMediaQuery, BorderRadius, Colors, DropShadow, Fonts } from 'styles';
 
 const StyledRoot = styled.div`
-  position: relative;
-  width: 100%;
+  /*width: 100%;*/
+  span {
+    width: 100% !important;
+  }
 `;
 
 {

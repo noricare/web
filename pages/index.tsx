@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
-import { NOTION_SECRET, NOTION_DB_FAQ_NORICARE_ID } from "../config";
+import { NOTION_SECRET, NOTION_DB_FAQ_NORICARE_ID } from '../config';
 import { FAQWrapper } from 'components/common';
 import { COMMON_FAQ_ITEM } from 'constant';
 import {
@@ -14,7 +14,7 @@ import {
 import styled from '@emotion/styled';
 import { applyMediaQuery, Colors, Fonts } from 'styles';
 
-const Home: NextPage = ({FAQ_NORICARE}:any) => {
+const Home: NextPage = ({ FAQ_NORICARE }: any) => {
   return (
     <div>
       <NextSeo
@@ -63,36 +63,25 @@ export const HomeMain = styled.main`
   }
 `;
 
-
 export async function getServerSideProps() {
   const options = {
     method: 'POST',
     headers: {
-
       'Notion-Version': '2022-06-28',
-      "Content-Type": 'application/json',
-      Authorization: `Bearer ${NOTION_SECRET}`
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${NOTION_SECRET}`,
     },
-    body:JSON.stringify({page_size:100})
-};
+    body: JSON.stringify({ page_size: 100 }),
+  };
 
-const res = await fetch(`https://api.notion.com/v1/databases/${NOTION_DB_FAQ_NORICARE_ID}/query`, options)
+  const res = await fetch(`https://api.notion.com/v1/databases/${NOTION_DB_FAQ_NORICARE_ID}/query`, options);
 
-const {results} = await res.json()
+  const { results } = await res.json();
 
-const FAQ_NORICARE = results.map(({properties}:any,idx:number)=>(
- {
-    answer:properties.answer.rich_text[0].plain_text,
-    question : properties.question.title[0].plain_text
+  const FAQ_NORICARE = results.map(({ properties }: any, idx: number) => ({
+    answer: properties.answer.rich_text[0].plain_text,
+    question: properties.question.title[0].plain_text,
+  }));
 
-  }
-
-
-
-))
-
-
-return {props:{FAQ_NORICARE}
-
-}
+  return { props: { FAQ_NORICARE } };
 }

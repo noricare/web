@@ -7,7 +7,7 @@ import { ImageSlider } from 'components/main/Item';
 export const ImageSliderWrapper = () => {
   return (
     <StyledRoot>
-      <Carousel showThumbs={false} showArrows={false} autoPlay={true} showStatus={false}>
+      <Carousel showThumbs={false} showArrows={true} autoPlay={true} showStatus={false}>
         {MainImage_ITEM.map(({ srl, label, width, height, subTitle00, subTitle01 }, idx) => (
           <ImageSlider
             key={idx}
@@ -27,17 +27,6 @@ export const ImageSliderWrapper = () => {
 const StyledRoot = styled.div`
   padding: 0 !important;
   background-color: ${Colors.blue100};
-
-  /*.slide {
-    div {
-      height: 100%;
-
-      span {
-        height: 100%;
-        width: 100% !important;
-      }
-    }
-  }*/
   ${applyMediaQuery('mobile')} {
     flex-direction: column;
   }
