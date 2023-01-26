@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import { ImageMain, FAQWrapper } from 'components/common';
 import { NextSeo } from 'next-seo';
 import { HomeMain } from '.';
-import { ProgramWrapper } from 'components/center';
+import { ProgramWrapper,ImageMainWrapper } from 'components/center';
 import { COMMON_FAQ_ITEM } from 'constant/FAQItem';
 
 const Center: NextPage = () => {
@@ -30,7 +30,8 @@ const Center: NextPage = () => {
       />
 
       <HomeMain>
-        <ImageMain src="/centerB2B.jpg" alt="노리케어 기관 수업" width="1650" height="810" />
+      
+        <ImageMainWrapper src="/centerB2B.jpg" alt="노리케어 기관 수업" width="1650" height="810" />
         <ProgramWrapper />
         {/*<FAQWrapper title="기관 수업" item={COMMON_FAQ_ITEM} />*/}
       </HomeMain>

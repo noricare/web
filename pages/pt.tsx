@@ -30,7 +30,7 @@ const Pt: NextPage = () => {
       />
 
       <HomeMain>
-        <ImageMain src="/ptB2C.jpg" alt="노리케어 방문 PT" width="1650" height="810" />
+        {/*<ImageMain src="/ptB2C.jpg" alt="노리케어 방문 PT" width="1650" height="810" />*/}
         <StrengthWrapper />
         <FeatureWrapper />
         <ProcessWrapper />
