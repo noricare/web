@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { applyMediaQuery, Colors, Fonts } from 'styles';
+import { applyMediaQuery, BorderRadius, Colors, DropShadow, Fonts } from 'styles';
 
-const StyledRoot = styled.div<{ percent: number }>`
+const StyledDonutChartRoot = styled.div<{ percent: number }>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,4 +82,25 @@ const DonutText = styled.p`
     ${Fonts.display2}
   }
 `;
-export { StyledRoot, DonutText };
+
+const StyledButtonRoot=styled.button`
+
+box-shadow:${DropShadow.regular};
+color:${Colors.white};
+background-color: ${Colors.blue500};
+padding: 1.5rem 2.5rem;
+border-radius: ${BorderRadius.regular};
+${Fonts.display4}
+margin:5rem;
+  ${applyMediaQuery('mobile')} {
+    ${Fonts.display3}
+    padding: 1rem 2rem;
+    margin:3rem
+  }
+`;
+const StyledTitleRoot = styled.h1`
+
+  text-align: center;
+`;
+
+export { StyledDonutChartRoot, DonutText, StyledTitleRoot,StyledButtonRoot  };
