@@ -6,21 +6,23 @@ import { DonutChart, DonutTitle, DonutButton } from 'components/main/Item';
 export const DonutWrapper = () => {
   return (
     <StyledRoot>
-      <DonutHeadContainer>
+      <DonutHeaderContainer>
         <DonutTitle/>
         <DonutButton/>
-      </DonutHeadContainer>
+      </DonutHeaderContainer>
+      <DonutChartContainer>
       {DONUT_ITEM.map(({ percent, title, description }, idx) => (
         <DonutChart percent={percent} key={idx} label={title} description={description} />
       ))}
+      </DonutChartContainer>
+
     </StyledRoot>
   );
 };
 
 const StyledRoot = styled.section`
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
 
   background-color: ${Colors.white};
@@ -30,9 +32,19 @@ const StyledRoot = styled.section`
 `;
 
 
-const DonutHeadContainer=styled.div`
+const DonutHeaderContainer=styled.div`
 display: flex;
 flex-direction: column;
 align-items:center;
 justify-content: center;
+`;
+
+const DonutChartContainer=styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+${applyMediaQuery('mobile')} {
+    flex-direction: column;
+  }
 `;
